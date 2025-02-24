@@ -1,0 +1,23 @@
+body {
+	background-color: 001514;
+	color: FBFFFE;
+}
+
+.title-container {
+	font-size: 2.5vw;
+	text-align: center;
+	border-style: solid;
+	border-color: 6B0504;
+	border-width: thick;
+	margin: 1vw;
+}
+
+.button-container {
+	border-style: solid;
+	margin: 1vw;
+	padding: 5vw;
+}
+
+.button {
+	margin: 1vw;
+}
