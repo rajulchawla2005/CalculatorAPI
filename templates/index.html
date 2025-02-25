@@ -2,6 +2,7 @@
 	<head>
 		<title>Calculator API</title>
 		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+		<script type="text/javascript" src="{{ url_for('static',filename='scripts/script.js') }}"></script>
 	</head>
 	<body>
 		<div class="title-container">
@@ -9,16 +10,16 @@
 		</div>
 		
 		<div class="button-container">
-			<div class="add button">
-				<button type="button">add</button>
+			<div id="add" class="button">
+				<button type="button" onclick="add_button_redirect();">add</button>
 			</div>
-			<div class="sub button">
+			<div id="sub" class="button">
 				<button type="button">sub</button>
 			</div>
-			<div class="mul button">
+			<div id="mul" class="button">
 				<button type="button">mul</button>
 			</div>
-			<div class="div button">
+			<div id="div" class="button">
 				<button type="button">div</button>
 			</div>
 		</div>
