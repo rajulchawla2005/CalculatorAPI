@@ -11,7 +11,9 @@
 		
 		<div class="button-container">
 			<div id="add" class="button">
-				<button type="button" onclick="add_button_redirect();">add</button>
+				<a href="{{ url_for('add_button')}}">
+					<button type="button">add</button>
+				</a>
 			</div>
 			<div id="sub" class="button">
 				<button type="button">sub</button>

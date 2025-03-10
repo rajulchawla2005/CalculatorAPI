@@ -1,13 +1,15 @@
 <html>
 	<head>
 		<title>Calculator API</title>
-		<link rel= "stylesheet" type= "text/css" href= "../styles/style.css">
-		<script type="text/javascript" src="../scripts/script.js"></script>
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+		<script type="text/javascript" src="{{ url_for('static',filename='scripts/script.js') }}"></script>
 	</head>
 	<body>
 		<div class="title-container">
 			<div id="home-button-container">
-				<button id="home-button" onclick="home_button_redirect()"> Home </button>
+				<a href="{{ url_for('home') }}">
+					<button id="home-button"> Home </button>
+				</a>
 			</div>
 			<h1>Add Operation</h1>
 		</div>
